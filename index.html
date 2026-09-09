@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#160b2b" />
+  <title>Emily Silveira | 18 anos</title>
+  <meta name="description" content="Convite interativo dos 18 anos de Emily Silveira — 10 de outubro, às 18h30." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="butterflies" aria-hidden="true">
+    <span class="butterfly b1">🦋</span><span class="butterfly b2">🦋</span><span class="butterfly b3">🦋</span>
+    <span class="butterfly b4">🦋</span><span class="butterfly b5">🦋</span><span class="butterfly b6">🦋</span>
+  </div>
+
+  <main class="invite">
+    <section class="hero reveal">
+      <p class="eyebrow">VOCÊ É MUITO ESPECIAL</p>
+      <p class="eyebrow small">E FAZ PARTE DESSE MOMENTO ÚNICO!</p>
+      <div class="ornament">✦ ♡ ✦</div>
+      <p class="overline">MEUS 18 ANOS</p>
+      <h1>Emily</h1>
+      <h2>Silveira</h2>
+      <p class="intro">Uma noite especial, cercada de pessoas queridas, para celebrar o início de um novo capítulo.</p>
+      <button class="scroll-btn" data-scroll="#details" aria-label="Ver detalhes">↓</button>
+    </section>
+
+    <section id="details" class="details glass reveal">
+      <div class="detail"><span class="icon">▦</span><span class="label">DATA</span><strong>10/10</strong><small>Sábado</small></div>
+      <div class="detail"><span class="icon">◷</span><span class="label">HORÁRIO</span><strong>18:30</strong><small>Começa às 18h30</small></div>
+      <div class="detail"><span class="icon">⌖</span><span class="label">LOCAL</span><strong>Cajazeiras 8 – Núcleo C</strong><small>Casa 1E · CEP 41338-350</small></div>
+    </section>
+
+    <section class="individual glass reveal">
+      <span class="mini-butterfly">🦋</span>
+      <div><p>Este convite é individual.</p><strong>Convidado não convida.</strong></div>
+      <span class="mini-butterfly">🦋</span>
+    </section>
+
+    <section class="countdown glass reveal">
+      <p class="section-kicker">A CONTAGEM COMEÇOU</p>
+      <h3>Falta pouco para essa noite especial</h3>
+      <div class="timer" id="timer">
+        <div><strong id="days">00</strong><span>DIAS</span></div>
+        <div><strong id="hours">00</strong><span>HORAS</span></div>
+        <div><strong id="minutes">00</strong><span>MIN</span></div>
+        <div><strong id="seconds">00</strong><span>SEG</span></div>
+      </div>
+    </section>
+
+    <section class="cards reveal">
+      <article class="card glass">
+        <div class="card-icon">🎁</div>
+        <p class="section-kicker">UMA AJUDINHA PARA ESCOLHER</p>
+        <h3>Guia de presentes</h3>
+        <p>Se você deseja me presentear, aqui vão algumas ideias que vou amar receber.</p>
+        <button class="primary" id="giftBtn">Ver sugestões</button>
+      </article>
+      <article class="card glass">
+        <div class="card-icon">♡</div>
+        <p class="section-kicker">SUA PRESENÇA FARÁ</p>
+        <h3>Toda a diferença!</h3>
+        <p>Confirme sua presença para que eu possa preparar tudo com muito carinho.</p>
+        <a class="primary" href="https://wa.me/5575988223985?text=Oi%20Emily!%20Confirmo%20minha%20presen%C3%A7a%20nos%20seus%2018%20anos%20no%20dia%2010%2F10.%20%F0%9F%92%9C" target="_blank" rel="noopener">✓ Confirmar pelo WhatsApp</a>
+        <small class="phone">(75) 98822-3985</small>
+      </article>
+    </section>
+
+    <section class="location glass reveal">
+      <p class="section-kicker">VAMOS CELEBRAR JUNTOS</p>
+      <h3>Onde tudo vai acontecer</h3>
+      <p>Cajazeiras 8 – Núcleo C · Casa 1E<br>CEP 41338-350</p>
+      <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Cajazeiras%208%20N%C3%BAcleo%20C%20Casa%201E%20Salvador%20BA" target="_blank" rel="noopener">⌖ Ver localização no mapa</a>
+    </section>
+
+    <footer class="footer reveal"><span>♡</span><p>Conto com você!</p><span>♡</span></footer>
+  </main>
+
+  <div class="modal" id="giftModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="giftTitle">
+    <div class="modal-box glass">
+      <button class="close" id="closeModal" aria-label="Fechar">×</button>
+      <p class="section-kicker">COM CARINHO</p>
+      <h3 id="giftTitle">Guia de presentes</h3>
+      <div class="gift-list">
+        <div><b>💄 Maquiagens</b><span>Produtos de pele, olhos, lábios, pincéis e kits.</span></div>
+        <div><b>👗 Roupas</b><span>Peças básicas, estilosas e que combinem comigo.</span></div>
+        <div><b>🌸 Perfumes</b><span>Fragrâncias doces, leves e marcantes.</span></div>
+        <div><b>🎀 Cartão-presente</b><span>Lojas de roupas, calçados, cosméticos ou acessórios.</span></div>
+      </div>
+      <p class="gift-footer">Seu carinho será sempre o meu melhor presente! 💜</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
