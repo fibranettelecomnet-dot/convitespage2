@@ -29,6 +29,35 @@ document.querySelectorAll('[data-scroll]').forEach(btn=>btn.addEventListener('cl
   document.querySelector(btn.dataset.scroll)?.scrollIntoView({behavior:'smooth'});
 }));
 
+// Abertura cinematográfica do convite.
+const opening = document.getElementById('opening');
+const envelope = document.getElementById('openInvite');
+const openTriggers = document.querySelectorAll('#openInvite,[data-open-invite]');
+let inviteOpened = false;
+
+function openInvitation(){
+  if(inviteOpened || !opening) return;
+  inviteOpened = true;
+  envelope?.classList.add('opening');
+  opening.classList.add('opened');
+  document.body.classList.add('invitation-opened');
+  setTimeout(()=>{
+    opening.remove();
+    window.scrollTo({top:0,behavior:'instant'});
+    document.querySelector('.hero')?.classList.add('visible');
+  },1200);
+}
+
+openTriggers.forEach(trigger=>trigger.addEventListener('click',openInvitation));
+
+// Também permite abrir pressionando Enter/Espaço quando a abertura estiver em foco.
+document.addEventListener('keydown',event=>{
+  if(!inviteOpened && (event.key==='Enter' || event.key===' ')){
+    event.preventDefault();
+    openInvitation();
+  }
+});
+
 // Brilho delicado ao tocar/clicar, inspirado nos pontos de luz da arte.
 document.addEventListener('click',e=>{
   if(e.target.closest('a,button')) return;
