@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#12071f" />
+  <meta name="theme-color" content="#0b0520" />
   <title>Emily Silveira | 18 anos</title>
   <meta name="description" content="Convite interativo dos 18 anos de Emily Silveira — 10 de outubro, às 18h30." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,103 +12,110 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="ambient" aria-hidden="true"></div>
-  <div class="stars" aria-hidden="true"></div>
+  <div class="sparkle-field" aria-hidden="true"></div>
+  <div class="nebula" aria-hidden="true"></div>
 
   <div class="butterflies" aria-hidden="true">
-    <span class="butterfly b1"><i></i><i></i><b></b></span>
-    <span class="butterfly b2"><i></i><i></i><b></b></span>
-    <span class="butterfly b3"><i></i><i></i><b></b></span>
-    <span class="butterfly b4"><i></i><i></i><b></b></span>
-    <span class="butterfly b5"><i></i><i></i><b></b></span>
+    <span class="butterfly bf-large bf-left"><i></i><i></i><i></i><i></i><b></b></span>
+    <span class="butterfly bf-small bf-top-right"><i></i><i></i><i></i><i></i><b></b></span>
+    <span class="butterfly bf-tiny bf-mid-right"><i></i><i></i><i></i><i></i><b></b></span>
+    <span class="butterfly bf-small bf-bottom-left"><i></i><i></i><i></i><i></i><b></b></span>
+    <span class="butterfly bf-large bf-bottom-right"><i></i><i></i><i></i><i></i><b></b></span>
   </div>
 
   <main class="invite">
     <section class="hero reveal">
-      <div class="hero-frame"></div>
-      <div class="hero-corner corner-tl">✦</div><div class="hero-corner corner-tr">✦</div>
-      <div class="hero-corner corner-bl">✦</div><div class="hero-corner corner-br">✦</div>
-
+      <div class="hero-glow"></div>
+      <div class="top-ornament"><span></span><b>♡</b><span></span></div>
       <div class="hero-content">
         <p class="eyebrow">VOCÊ É MUITO ESPECIAL</p>
         <p class="eyebrow small">E FAZ PARTE DESSE MOMENTO ÚNICO!</p>
-        <div class="ornament"><span></span> ♡ <span></span></div>
-        <p class="overline">MEUS</p>
-        <div class="age">18</div>
-        <p class="years">ANOS</p>
+
+        <p class="overline">MEUS <strong>18</strong> ANOS</p>
         <h1>Emily</h1>
         <h2>Silveira</h2>
-        <div class="hero-rule"><span>10</span><i></i><span>10</span></div>
+
+        <div class="name-ornament"><span></span><b>♡</b><span></span></div>
         <p class="intro">Uma noite especial, cercada de pessoas queridas, para celebrar o início de um novo capítulo.</p>
-        <button class="scroll-btn" data-scroll="#details" aria-label="Ver detalhes">↓</button>
       </div>
+      <button class="scroll-btn" data-scroll="#details" aria-label="Ver detalhes">↓</button>
     </section>
 
     <section id="details" class="details glass reveal">
-      <div class="detail"><span class="icon">♢</span><span class="label">DATA</span><strong>10 de outubro</strong><small>Sábado</small></div>
-      <div class="detail"><span class="icon">◷</span><span class="label">HORÁRIO</span><strong>18:30</strong><small>Começa às 18h30</small></div>
-      <div class="detail"><span class="icon">⌖</span><span class="label">LOCAL</span><strong>Cajazeiras 8</strong><small>Núcleo C · Casa 1E · CEP 41338-350</small></div>
+      <div class="detail">
+        <span class="line-icon calendar-icon" aria-hidden="true"></span>
+        <span class="label">DATA</span>
+        <strong>10/10</strong>
+        <small>Sábado</small>
+      </div>
+      <div class="detail">
+        <span class="line-icon clock-icon" aria-hidden="true"></span>
+        <span class="label">HORÁRIO</span>
+        <strong>18:30</strong>
+        <small>Começa às 18h30</small>
+      </div>
+      <div class="detail">
+        <span class="line-icon pin-icon" aria-hidden="true"></span>
+        <span class="label">LOCAL</span>
+        <strong>Cajazeiras 8 – Núcleo C</strong>
+        <small>Casa 1E · CEP 41338-350</small>
+      </div>
     </section>
 
     <section class="individual glass reveal">
-      <span class="mini-butterfly">🦋</span>
-      <div><p>Este convite é <em>individual</em>.</p><strong>Convidado não convida.</strong></div>
-      <span class="mini-butterfly">🦋</span>
+      <span class="mini-wing left-wing"></span>
+      <div>
+        <p>Este convite é <em>individual.</em></p>
+        <strong>Convidado não convida.</strong>
+      </div>
+      <span class="mini-wing right-wing"></span>
     </section>
 
-    <section class="countdown glass reveal">
-      <p class="section-kicker">A CONTAGEM COMEÇOU</p>
-      <h3>Falta pouco para essa noite especial</h3>
-      <div class="timer" id="timer">
-        <div><strong id="days">00</strong><span>DIAS</span></div>
-        <div><strong id="hours">00</strong><span>HORAS</span></div>
-        <div><strong id="minutes">00</strong><span>MIN</span></div>
-        <div><strong id="seconds">00</strong><span>SEG</span></div>
-      </div>
+    <section class="countdown-strip reveal" aria-label="Contagem regressiva">
+      <span>FALTAM</span>
+      <strong id="days">00</strong><small>DIAS</small>
+      <i>•</i>
+      <strong id="hours">00</strong><small>H</small>
+      <i>•</i>
+      <strong id="minutes">00</strong><small>MIN</small>
+      <i>•</i>
+      <strong id="seconds">00</strong><small>SEG</small>
+      <span>PARA ESSA NOITE</span>
     </section>
 
     <section class="cards reveal">
-      <article class="card glass">
-        <div class="card-icon">♧</div>
-        <p class="section-kicker">UMA AJUDINHA PARA ESCOLHER</p>
-        <h3>Guia de presentes</h3>
-        <p>Se você deseja me presentear, aqui vão algumas ideias que vou amar receber.</p>
-        <button class="primary" id="giftBtn">Ver sugestões</button>
+      <article class="card glass gift-card">
+        <div class="card-heading"><span class="gift-line-icon">♧</span><h3>GUIA DE PRESENTES</h3></div>
+        <p class="card-intro">Se você deseja me presentear,<br> aqui vão algumas ideias que<br> vou amar receber:</p>
+        <div class="gift-list compact">
+          <div><b>MAQUIAGENS</b><span>Produtos de pele, olhos,<br>lábios, pincéis e kits.</span></div>
+          <div><b>ROUPAS</b><span>Peças básicas, estilosas<br>e que combinem comigo.</span></div>
+          <div><b>PERFUMES</b><span>Fragrâncias doces, leves<br>e marcantes.</span></div>
+          <div><b>CARTÃO PRESENTE</b><span>Lojas de roupas, calçados,<br>cosméticos ou acessórios.</span></div>
+        </div>
+        <p class="gift-signature">Seu carinho será sempre<br>o meu melhor presente! <span>♥</span></p>
       </article>
-      <article class="card glass">
-        <div class="card-icon">♡</div>
-        <p class="section-kicker">SUA PRESENÇA FARÁ</p>
-        <h3>Toda a diferença!</h3>
-        <p>Confirme sua presença para que eu possa preparar tudo com muito carinho.</p>
-        <a class="primary" href="https://wa.me/5575988223985?text=Oi%20Emily!%20Confirmo%20minha%20presen%C3%A7a%20nos%20seus%2018%20anos%20no%20dia%2010%2F10.%20%F0%9F%92%9C" target="_blank" rel="noopener">✓ Confirmar pelo WhatsApp</a>
-        <small class="phone">(75) 98822-3985</small>
+
+      <article class="card glass confirm-card">
+        <div class="tiny-ornament"><span></span><b>♡</b><span></span></div>
+        <h3>CONFIRME SUA PRESENÇA</h3>
+        <p class="confirm-text">Sua presença fará<br>toda a diferença!</p>
+        <a class="whatsapp-button" href="https://wa.me/5575988223985?text=Oi%20Emily!%20Confirmo%20minha%20presen%C3%A7a%20nos%20seus%2018%20anos%20no%20dia%2010%2F10.%20%F0%9F%92%9C" target="_blank" rel="noopener" aria-label="Confirmar presença pelo WhatsApp">
+          <span class="whatsapp-icon">◔</span>
+          <span>CONFIRMAR</span>
+        </a>
+        <strong class="whatsapp-number">75 9 8822-3985</strong>
+        <span class="confirm-deadline">até 15/09</span>
       </article>
     </section>
 
-    <section class="location glass reveal">
-      <p class="section-kicker">VAMOS CELEBRAR JUNTOS</p>
-      <h3>Onde tudo vai acontecer</h3>
-      <p>Cajazeiras 8 – Núcleo C · Casa 1E<br>CEP 41338-350</p>
-      <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Cajazeiras%208%20N%C3%BAcleo%20C%20Casa%201E%20Salvador%20BA" target="_blank" rel="noopener">⌖ Ver localização no mapa</a>
+    <section class="location reveal">
+      <p>⌖ Cajazeiras 8 – Núcleo C · Casa 1E · CEP 41338-350</p>
+      <a href="https://www.google.com/maps/search/?api=1&query=Cajazeiras%208%20N%C3%BAcleo%20C%20Casa%201E%20Salvador%20BA" target="_blank" rel="noopener">Ver localização no mapa</a>
     </section>
 
-    <footer class="footer reveal"><span>✦</span><p>Conto com você!</p><span>✦</span></footer>
+    <footer class="footer reveal"><span>♥</span><p>Conto com você!</p><span>♥</span></footer>
   </main>
-
-  <div class="modal" id="giftModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="giftTitle">
-    <div class="modal-box glass">
-      <button class="close" id="closeModal" aria-label="Fechar">×</button>
-      <p class="section-kicker">COM CARINHO</p>
-      <h3 id="giftTitle">Guia de presentes</h3>
-      <div class="gift-list">
-        <div><b>💄 Maquiagens</b><span>Produtos de pele, olhos, lábios, pincéis e kits.</span></div>
-        <div><b>👗 Roupas</b><span>Peças básicas, estilosas e que combinem comigo.</span></div>
-        <div><b>🌸 Perfumes</b><span>Fragrâncias doces, leves e marcantes.</span></div>
-        <div><b>🎀 Cartão-presente</b><span>Lojas de roupas, calçados, cosméticos ou acessórios.</span></div>
-      </div>
-      <p class="gift-footer">Seu carinho será sempre o meu melhor presente! 💜</p>
-    </div>
-  </div>
 
   <script src="script.js"></script>
 </body>
