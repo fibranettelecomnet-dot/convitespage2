@@ -10,8 +10,33 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="opening.css" />
 </head>
 <body>
+  <section id="opening" class="opening" aria-label="Abertura do convite">
+    <div class="opening-stars" aria-hidden="true"></div>
+    <div class="opening-butterfly opening-butterfly-a" aria-hidden="true"><span></span><span></span><span></span><span></span><b></b></div>
+    <div class="opening-butterfly opening-butterfly-b" aria-hidden="true"><span></span><span></span><span></span><span></span><b></b></div>
+    <div class="envelope-wrap">
+      <div class="envelope-glow"></div>
+      <button id="openInvite" class="envelope" type="button" aria-label="Abrir convite">
+        <span class="envelope-back"></span>
+        <span class="envelope-paper">
+          <small>VOCÊ É MUITO ESPECIAL</small>
+          <strong>Emily</strong>
+          <em>18 anos</em>
+        </span>
+        <span class="envelope-flap"></span>
+        <span class="envelope-seal">♡</span>
+      </button>
+    </div>
+    <div class="opening-copy">
+      <p>Um convite especial foi preparado para você</p>
+      <button class="open-label" type="button" data-open-invite>TOQUE PARA ABRIR</button>
+      <span class="opening-hint">e descubra uma noite inesquecível ✦</span>
+    </div>
+  </section>
+
   <div class="sparkle-field" aria-hidden="true"></div>
   <div class="nebula" aria-hidden="true"></div>
 
@@ -30,11 +55,9 @@
       <div class="hero-content">
         <p class="eyebrow">VOCÊ É MUITO ESPECIAL</p>
         <p class="eyebrow small">E FAZ PARTE DESSE MOMENTO ÚNICO!</p>
-
         <p class="overline">MEUS <strong>18</strong> ANOS</p>
         <h1>Emily</h1>
         <h2>Silveira</h2>
-
         <div class="name-ornament"><span></span><b>♡</b><span></span></div>
         <p class="intro">Uma noite especial, cercada de pessoas queridas, para celebrar o início de um novo capítulo.</p>
       </div>
@@ -42,45 +65,15 @@
     </section>
 
     <section id="details" class="details glass reveal">
-      <div class="detail">
-        <span class="line-icon calendar-icon" aria-hidden="true"></span>
-        <span class="label">DATA</span>
-        <strong>10/10</strong>
-        <small>Sábado</small>
-      </div>
-      <div class="detail">
-        <span class="line-icon clock-icon" aria-hidden="true"></span>
-        <span class="label">HORÁRIO</span>
-        <strong>18:30</strong>
-        <small>Começa às 18h30</small>
-      </div>
-      <div class="detail">
-        <span class="line-icon pin-icon" aria-hidden="true"></span>
-        <span class="label">LOCAL</span>
-        <strong>Cajazeiras 8 – Núcleo C</strong>
-        <small>Casa 1E · CEP 41338-350</small>
-      </div>
+      <div class="detail"><span class="line-icon calendar-icon" aria-hidden="true"></span><span class="label">DATA</span><strong>10/10</strong><small>Sábado</small></div>
+      <div class="detail"><span class="line-icon clock-icon" aria-hidden="true"></span><span class="label">HORÁRIO</span><strong>18:30</strong><small>Começa às 18h30</small></div>
+      <div class="detail"><span class="line-icon pin-icon" aria-hidden="true"></span><span class="label">LOCAL</span><strong>Cajazeiras 8 – Núcleo C</strong><small>Casa 1E · CEP 41338-350</small></div>
     </section>
 
-    <section class="individual glass reveal">
-      <span class="mini-wing left-wing"></span>
-      <div>
-        <p>Este convite é <em>individual.</em></p>
-        <strong>Convidado não convida.</strong>
-      </div>
-      <span class="mini-wing right-wing"></span>
-    </section>
+    <section class="individual glass reveal"><span class="mini-wing left-wing"></span><div><p>Este convite é <em>individual.</em></p><strong>Convidado não convida.</strong></div><span class="mini-wing right-wing"></span></section>
 
     <section class="countdown-strip reveal" aria-label="Contagem regressiva">
-      <span>FALTAM</span>
-      <strong id="days">00</strong><small>DIAS</small>
-      <i>•</i>
-      <strong id="hours">00</strong><small>H</small>
-      <i>•</i>
-      <strong id="minutes">00</strong><small>MIN</small>
-      <i>•</i>
-      <strong id="seconds">00</strong><small>SEG</small>
-      <span>PARA ESSA NOITE</span>
+      <span>FALTAM</span><strong id="days">00</strong><small>DIAS</small><i>•</i><strong id="hours">00</strong><small>H</small><i>•</i><strong id="minutes">00</strong><small>MIN</small><i>•</i><strong id="seconds">00</strong><small>SEG</small><span>PARA ESSA NOITE</span>
     </section>
 
     <section class="cards reveal">
@@ -95,28 +88,18 @@
         </div>
         <p class="gift-signature">Seu carinho será sempre<br>o meu melhor presente! <span>♥</span></p>
       </article>
-
       <article class="card glass confirm-card">
         <div class="tiny-ornament"><span></span><b>♡</b><span></span></div>
         <h3>CONFIRME SUA PRESENÇA</h3>
         <p class="confirm-text">Sua presença fará<br>toda a diferença!</p>
-        <a class="whatsapp-button" href="https://wa.me/5575988223985?text=Oi%20Emily!%20Confirmo%20minha%20presen%C3%A7a%20nos%20seus%2018%20anos%20no%20dia%2010%2F10.%20%F0%9F%92%9C" target="_blank" rel="noopener" aria-label="Confirmar presença pelo WhatsApp">
-          <span class="whatsapp-icon">◔</span>
-          <span>CONFIRMAR</span>
-        </a>
-        <strong class="whatsapp-number">75 9 8822-3985</strong>
-        <span class="confirm-deadline">até 15/09</span>
+        <a class="whatsapp-button" href="https://wa.me/5575988223985?text=Oi%20Emily!%20Confirmo%20minha%20presen%C3%A7a%20nos%20seus%2018%20anos%20no%20dia%2010%2F10.%20%F0%9F%92%9C" target="_blank" rel="noopener" aria-label="Confirmar presença pelo WhatsApp"><span class="whatsapp-icon">◔</span><span>CONFIRMAR</span></a>
+        <strong class="whatsapp-number">75 9 8822-3985</strong><span class="confirm-deadline">até 15/09</span>
       </article>
     </section>
 
-    <section class="location reveal">
-      <p>⌖ Cajazeiras 8 – Núcleo C · Casa 1E · CEP 41338-350</p>
-      <a href="https://www.google.com/maps/search/?api=1&query=Cajazeiras%208%20N%C3%BAcleo%20C%20Casa%201E%20Salvador%20BA" target="_blank" rel="noopener">Ver localização no mapa</a>
-    </section>
-
+    <section class="location reveal"><p>⌖ Cajazeiras 8 – Núcleo C · Casa 1E · CEP 41338-350</p><a href="https://www.google.com/maps/search/?api=1&query=Cajazeiras%208%20N%C3%BAcleo%20C%20Casa%201E%20Salvador%20BA" target="_blank" rel="noopener">Ver localização no mapa</a></section>
     <footer class="footer reveal"><span>♥</span><p>Conto com você!</p><span>♥</span></footer>
   </main>
-
   <script src="script.js"></script>
 </body>
 </html>
